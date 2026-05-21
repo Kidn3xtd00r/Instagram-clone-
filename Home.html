@@ -1,0 +1,1135 @@
+/** * This is the Home page of the Instagram Clone project. It features a
+navigation bar and a feed of posts. * Each post includes a header with profile
+information, an image or video, action buttons, likes, and a caption. * The page
+is styled using an external CSS file (Home.css) and utilizes Font Awesome for
+icons. * The content is static and serves as a template for the Instagram feed.
+*/
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="icon" type="image/svg+xml/png" href="/Images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Instagram Clone</title>
+  </head>
+  /** This is the body of the Home page, containing the navigation bar and the
+  feed of posts. Each post includes a header with profile information, an image
+  or video, action buttons, likes, and a caption. The content is static and
+  serves as a template for the Instagram feed. */
+  <body>
+    <!--NAVIGATION BAR-->>
+    <nav>
+      <ul>
+        <li>
+          <a href="Home.html" class="hover-underline">
+            <i
+              class="fa-brands fa-instagram"
+              style="color: rgb(99, 230, 190)"
+            ></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="Search.html" class="hover-underline">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: rgb(99, 230, 190)"
+            ></i>
+            Search
+          </a>
+        </li>
+        <li>
+          <a href="Reels.html" class="hover-underline">
+            <i class="fa-solid fa-video" style="color: rgb(99, 230, 190)"></i>
+            Reels
+          </a>
+        </li>
+        <li>
+          <a href="Messages.html" class="hover-underline">
+            <i class="fa-solid fa-message" style="color: rgb(99, 230, 190)"></i>
+            Messages
+          </a>
+        </li>
+        <li>
+          <a href="Notifications.html" class="hover-underline">
+            <i class="fa-solid fa-bell" style="color: rgb(99, 230, 190)"></i>
+            Notifications
+          </a>
+        </li>
+        <li>
+          <a href="Profile.html" class="hover-underline">
+            <i
+              class="fa-solid fa-circle-user"
+              style="color: rgb(99, 230, 190)"
+            ></i>
+            Profile
+          </a>
+        </li>
+        <li class="settings">
+          <a href="Settings.html" class="hover-underline">
+            <i class="fa-solid fa-gears" style="color: rgb(99, 230, 190)"></i>
+            Settings
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- MAIN FYP - THIS IS THE MAIN FEED CONTAINER -->
+    <header>
+      <!--THIS IS THE HEADER OF THE FYP FEED-->
+      <h1>Instagram Clone</h1>
+
+      <!--THIS IS THE STORY SECTION IN THE HEADER-->
+      <!-- STORY SECTION -->
+      <div class="stories">
+        <!-- STORY 1 -->
+        <div class="story">
+          <a href="#story1">
+            <img src="Images/joeeka.jpeg" alt="Story 2" />
+          </a>
+          <p>j.denzel_</p>
+        </div>
+
+        <!-- FULLSCREEN STORY 1 -->
+        <div id="story1" class="story-view">
+          <div class="story-header">
+            <div class="profile-info">
+              <img src="Images/Joeblack.jpeg" alt="Profile Picture" />
+              <p>kidnextdoor</p>
+            </div>
+          </div>
+          <a href="#" class="close">✕</a>
+          <img src="Images/joeeka.jpeg" alt="Story Fullscreen" />
+        </div>
+
+        <!-- STORY 2 -->
+        <div class="story">
+          <a href="#story2">
+            <img src="Images/joehike.jpeg" alt="Story 3" />
+          </a>
+          <p>Eldoret Trailblazers</p>
+        </div>
+
+        <div id="story2" class="story-view">
+          <div class="story-header">
+            <div class="profile-info">
+              <img src="Images/joehike.jpeg" alt="Profile Picture" />
+              <p>Eldoret Trailblazers</p>
+            </div>
+          </div>
+          <a href="#" class="close">✕</a>
+          <img src="Images/joehike.jpeg" alt="Story Fullscreen" />
+        </div>
+
+        <!-- STORY 3 -->
+        <div class="story">
+          <a href="#story3">
+            <img src="Images/Munju with bruv.jpeg" alt="Story 4" />
+          </a>
+          <p>Munjuthebubblybanditthebubblybundit</p>
+        </div>
+
+        <div id="story3" class="story-view">
+          <div class="story-header">
+            <div class="profile-info">
+              <img src="Images/Munju with bruv.jpeg" alt="Profile Picture" />
+              <p>Munjuthebubblybanditthebubblybundit</p>
+            </div>
+          </div>
+          <a href="#" class="close">✕</a>
+          <img src="Images/Munju with bruv.jpeg" alt="Story Fullscreen" />
+        </div>
+
+        <!-- STORY 4 -->
+        <div class="story">
+          <a href="#story4">
+            <img src="Images/Adasha's Shoe Palace.jpeg" alt="Story 5" />
+          </a>
+          <p>Adasha's Shoe Palace</p>
+        </div>
+
+        <div id="story4" class="story-view">
+          <div class="story-header">
+            <div class="profile-info">
+              <img
+                src="Images/Adasha's Shoe Palace.jpeg"
+                alt="Profile Picture"
+              />
+              <p>Adasha's Shoe Palace</p>
+            </div>
+          </div>
+          <a href="#" class="close">✕</a>
+          <img src="Images/Adasha's Shoe Palace.jpeg" alt="Story Fullscreen" />
+        </div>
+
+        <!-- STORY 5 -->
+        <div class="story">
+          <a href="#story5">
+            <img src="Images/CN.jpeg" alt="Story 6" />
+          </a>
+          <p>Cartoon Network</p>
+        </div>
+
+        <div id="story5" class="story-view">
+          <div class="story-header">
+            <div class="profile-info">
+              <img src="Images/CN.jpeg" alt="Profile Picture" />
+              <p>Cartoon Network</p>
+            </div>
+          </div>
+          <a href="#" class="close">✕</a>
+          <img src="Images/CN.jpeg" alt="Story Fullscreen" />
+        </div>
+
+        <!-- STORY 6 -->
+        <div class="story">
+          <a href="#story6">
+            <img src="Images/Gain with Joe.jpeg" alt="Story 7" />
+          </a>
+          <p>JoeVsTheGym</p>
+        </div>
+
+        <div id="story6" class="story-view">
+          <div class="story-header">
+            <div class="profile-info">
+              <img src="Images/Gain with Joe.jpeg" alt="Profile Picture" />
+              <p>JoeVsTheGym</p>
+            </div>
+          </div>
+          <a href="#" class="close">✕</a>
+          <img src="Images/Gain with Joe.jpeg" alt="Story Fullscreen" />
+        </div>
+
+        <!-- STORY 7 -->
+        <div class="story">
+          <a href="#story7">
+            <img src="Images/Ivy.jpeg" alt="Story 8" />
+          </a>
+          <p>IvyInPixels</p>
+        </div>
+
+        <div id="story7" class="story-view">
+          <div class="story-header">
+            <div class="profile-info">
+              <img src="Images/Ivy.jpeg" alt="Profile Picture" />
+              <p>IvyInPixels</p>
+            </div>
+          </div>
+          <a href="#" class="close">✕</a>
+          <img src="Images/Ivy.jpeg" alt="Story Fullscreen" />
+        </div>
+
+        <!-- STORY 8 -->
+        <div class="story">
+          <a href="#story8">
+            <img src="Images/Ad.jpeg" alt="Story 9" />
+          </a>
+          <p>Ad</p>
+        </div>
+
+        <div id="story8" class="story-view">
+          <div class="story-header">
+            <div class="profile-info">
+              <img src="Images/Ad.jpeg" alt="Profile Picture" />
+              <p>Ad</p>
+            </div>
+          </div>
+          <a href="#" class="close">✕</a>
+          <img src="Images/Ad.jpeg" alt="Story Fullscreen" />
+        </div>
+      </div>
+    </header>
+    <!-- MAIN FYP THIS IS THE SERIES OF POSTS -->
+
+    <!--POST 1-->
+    <section>
+      <!--THIS IS A POST HEADER IN THE FEED-->
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/Joeblack.jpeg" alt="Profile Picture" />
+          <p>kidnextdoor</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+
+      <!--THIS IS THE IMAGE CONTAINER FOR THE POST-->
+      <div class="fyp">
+        <!-- Post image -->
+        <img src="Images/Joeblue.jpeg" alt="Post Image" class="post-img" />
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>Abbykysher:</strong> Fire Bruv!!🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>Ms.Azenga:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+
+          <!-- The right side action button (bookmark) -->
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!--This is the Number of likes and user caption-->
+        <div>
+          <!-- Likes -->
+          <p class="likes">
+            Liked by <strong>AbbyKysher</strong> and 100 others
+          </p>
+
+          <!-- Caption -->
+          <p class="caption">
+            <strong>kidnextdoor</strong> Euphoria #projectorphotography #Joeblue
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--POST 2-->
+    <section>
+      <!--THIS IS A POST HEADER IN THE FEED-->
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/joeeka.jpeg" alt="Profile Picture" />
+          <p>j.denzel_</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+
+      <!--THIS IS THE IMAGE CONTAINER FOR THE POST-->
+
+      <div class="fyp">
+        <!-- Post image -->
+        <img src="Images/joeeka.jpeg" alt="Post Image" class="post-img" />
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>EkaHotel:</strong> 🔥🔥🔥🔥🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>DominoRevolution:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+
+          <!-- The right side action button (bookmark) -->
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!--This is the Number of likes and user caption-->
+        <div>
+          <!-- Likes -->
+          <p class="likes">
+            Liked by <strong>AbbyKysher</strong> and 100 others
+          </p>
+
+          <!-- Caption -->
+          <p class="caption">
+            <strong>kidnextdoor</strong> Euphoria #projectorphotography #Joeblue
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--POST 3-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/joehike.jpeg" alt="Profile Picture" />
+          <p>Eldoret Trailblazers</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="fyp">
+        <!-- Post image -->
+        <video
+          src="Videos/Tiret Hike.mp4"
+          alt="Post Video"
+          class="post-img"
+          controls
+          autoplay
+          loop
+          unmute
+        ></video>
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>Anika:</strong> 😉</p>
+                <p><strong>CalebMwambodze:</strong> Clean shot 😮‍💨</p>
+                <p><strong>SamSmith:</strong> Hot 😎</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">
+          Liked by <strong>Munjuthebubblybandit</strong> and 1120 others
+        </p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>Eldoret Trailblazers</strong> Tiret Hike was amazing!
+          #Touchgrass #Hiking #Fyp
+        </p>
+      </div>
+    </section>
+    <!--POST 4-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/Munju with bruv.jpeg" alt="Profile Picture" />
+          <p>Munjuthebubblybandit</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="fyp">
+        <!-- Post image -->
+        <img
+          src="Images/Munju with bruv.jpeg"
+          alt="Post Image"
+          class="post-img"
+        />
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>abbykysher:</strong> Fireee 🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>immah:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">Liked by <strong>Mr.Beast</strong> and 100 others</p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>Munjuthebubblybanditthebubblybundit</strong> Highking #Siret
+          Hike #Siret
+        </p>
+      </div>
+    </section>
+
+    <!--POST 5-->
+    <!-- This is an example post where we showcase a multi-image post -->
+    <section>
+      <!--post header for multi-image post-->
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/Adasha's Shoe Palace.jpeg" alt="Profile Picture" />
+          <p>Adasha's Shoe Palace</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+
+      <!--THIS IS THE IMAGE CONTAINER FOR THE MULTI-IMAGE POST-->
+      <div class="multi-image-post">
+        <div class="image-scroll">
+          <img
+            src="Images/Adasha's Shoe Palace.jpeg"
+            alt="Post Image"
+            class="post-img"
+          />
+          <img
+            src="Images/Adasha's Shoe Palace 2.jpeg"
+            alt="Post Image"
+            class="post-img"
+          />
+          <img
+            src="Images/Adasha's Shoe Palace 3.jpeg"
+            alt="Post Image"
+            class="post-img"
+          />
+        </div>
+        <div class="multi-image-indicator">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div>
+          <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+          <!-- Actions row Buttons -->
+          <div class="post-actions">
+            <!-- The left side action buttons (like, comment, share) -->
+            <div class="left-actions">
+              <!-- The like button with the heart icons -->
+              <label class="like-btn">
+                <input type="checkbox" />
+                <i class="fa-regular fa-heart heart-outline"></i>
+                <i class="fa-solid fa-heart heart-filled"></i>
+              </label>
+              <!-- The comment button with the comment icon and popup -->
+              <div class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+
+                <div class="popup comments-popup">
+                  <p><strong>Takeoff:</strong> How Much?</p>
+                  <p>
+                    <strong>Mambichwa:</strong> Na kiatu ikiulizwa inasemaje?😮‍💨
+                  </p>
+                  <p><strong>Samalwaka:</strong> Full regard!!</p>
+
+                  <div class="comment-bar">
+                    <input type="text" placeholder="Add a comment..." />
+                    <button>Post</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- The share button -->
+              <div class="share-btn">
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+            </div>
+
+            <div class="right-actions">
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+          </div>
+          <!-- Likes -->
+          <p class="likes">
+            Liked by <strong>ImmahTheSpecialOne</strong> and 780 others
+          </p>
+
+          <!-- Caption -->
+          <p class="caption">
+            <strong>Adasha's Shoe Palace</strong> Euphoria #projectorphotography
+            #Joeblue
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--POST 6-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/CN.jpeg" alt="Profile Picture" />
+          <p>Cartoon Network</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="fyp">
+        <!-- Post image -->
+        <img src="Images/CN.jpeg" alt="Post Image" class="post-img" />
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>abbykysher:</strong> Fireee 🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>immah:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">
+          Liked by <strong>KylaKrystal</strong> and 1060 others
+        </p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>Cartoon Network</strong> Catch up on new episodes of Operation
+          Kids Next Door Every Saturday at 17.30 EAT #67 #CN #kidsnextdoor
+        </p>
+      </div>
+    </section>
+    <!--POST 7-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/Gain with Joe.jpeg" alt="Profile Picture" />
+          <p>JoeVsTheGym</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="fyp">
+        <!-- Post image -->
+        <img
+          src="Images/Gain with Joe.jpeg"
+          alt="Post Image"
+          class="post-img"
+        />
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>abbykysher:</strong> Fireee 🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>immah:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">
+          Liked by <strong>Ivyinpixels</strong> and 200k others
+        </p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>JoeVsTheGym</strong> Operation Abs #14week streak #JoeVsTheGym
+        </p>
+      </div>
+    </section>
+    <!--POST 8-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/Ivy.jpeg" alt="Profile Picture" />
+          <p>IvyInPixels</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="multi-image-post">
+        <!-- Post image -->
+        <div class="image-scroll">
+          <img src="Images/Ivy.jpeg" alt="Post Image" class="post-img" />
+          <img src="Images/Ivy 2.jpeg" alt="Post Image" class="post-img" />
+          <img src="Images/Ivy 3.jpeg" alt="Post Image" class="post-img" />
+        </div>
+        <div class="multi-image-indicator">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>abbykysher:</strong> Fireee 🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>immah:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">
+          Liked by <strong>kidnextdoor.__</strong> and 100 others
+        </p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>IvyInPixels</strong> AI photography #selflove
+          #gainwithxtiandela
+        </p>
+      </div>
+    </section>
+    <!--POST 9-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/Ad.jpeg" alt="Profile Picture" />
+          <p>Ad</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="fyp">
+        <!-- Post image -->
+        <img src="Images/Ad.jpeg" alt="Post Image" class="post-img" />
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>abbykysher:</strong> Fireee 🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>immah:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">
+          Liked by <strong>AggreyMnjala</strong> and 100 others
+        </p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>Ad</strong> Mitsubishi Canter on sale! #MitsubishiCanter #Ad
+          Contact 0710161874 for more details.
+        </p>
+      </div>
+    </section>
+    <!--POST 10-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/Adasha's Shoe Palace 2.jpeg" alt="Profile Picture" />
+          <p>Miradee</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="fyp">
+        <!-- Post image -->
+        <img
+          src="Images/Adasha's Shoe Palace 3.jpeg"
+          alt="Post Image"
+          class="post-img"
+        />
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>abbykysher:</strong> Fireee 🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>immah:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">Liked by <strong>AbbyKysher</strong> and 100 others</p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>Available at 3000/=</strong> Men's Smart Wear #Fashion
+          #Casualshoes
+        </p>
+      </div>
+    </section>
+    <!--POST 11-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/joehike.jpeg" alt="Profile Picture" />
+          <p>FridahSaleh</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="fyp">
+        <!-- Post image -->
+        <img src="Images/joehike.jpeg" alt="Post Image" class="post-img" />
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>abbykysher:</strong> Fireee 🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>immah:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">Liked by <strong>Ms.Azenga</strong> and 150 others</p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>FridahSaleh</strong> Kimondi Forest Hike #Highking #Nature
+        </p>
+      </div>
+    </section>
+    <!--POST 12-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/Joeblack.jpeg" alt="Profile Picture" />
+          <p>kidnextdoor</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="fyp">
+        <!-- Post image -->
+        <video
+          src="Videos/Relive.mp4"
+          alt="Post Video"
+          class="post-img"
+          controls
+          autoplay
+          loop
+          unmute
+        ></video>
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>abbykysher:</strong> Fireee 🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>immah:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">
+          Liked by <strong>DonaldTrump</strong> and 1005 others
+        </p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>kidnextdoor</strong> Evening Bike Ride #Cycling #Joe
+        </p>
+      </div>
+    </section>
+    <!--POST 13-->
+    <section>
+      <div class="post-header">
+        <div class="profile-info">
+          <img src="Images/joeeka.jpeg" alt="Profile Picture" />
+          <p>AbbyKysher</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="fyp">
+        <!-- Post image -->
+        <video
+          src="Videos/AbbyKysher Push Ups.mp4"
+          alt="Post Video"
+          class="post-img"
+          controls
+          autoplay
+          loop
+          unmute
+        ></video>
+
+        <!-- THIS IS THE ACTIONS ROW FOR THE POST-->
+        <!-- Actions row Buttons -->
+        <div class="post-actions">
+          <!-- The left side action buttons (like, comment, share) -->
+          <div class="left-actions">
+            <!-- The like button with the heart icons -->
+            <label class="like-btn">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart heart-outline"></i>
+              <i class="fa-solid fa-heart heart-filled"></i>
+            </label>
+            <!-- The comment button with the comment icon and popup -->
+            <div class="comment-btn">
+              <i class="fa-regular fa-comment"></i>
+
+              <div class="popup comments-popup">
+                <p><strong>abbykysher:</strong> Fireee 🔥</p>
+                <p><strong>Munjuthebubblybandit:</strong> Clean shot 😮‍💨</p>
+                <p><strong>immah:</strong> Hardddd 😭</p>
+
+                <div class="comment-bar">
+                  <input type="text" placeholder="Add a comment..." />
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- The share button -->
+            <div class="share-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="right-actions">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Likes -->
+        <p class="likes">Liked by <strong>Kim.K</strong> and 1.5m others</p>
+
+        <!-- Caption -->
+        <p class="caption">
+          <strong>AbbyKysher</strong> The grind never stops! #PushUpChallenge
+          #FitnessMotivation
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
