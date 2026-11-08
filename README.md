@@ -2,6 +2,8 @@
 
 A responsive Instagram-inspired frontend built using pure HTML and CSS.
 
+> A learning project. Not affiliated with or endorsed by Instagram or Meta.
+
 This project recreates the core feel of Instagram’s feed experience while focusing heavily on frontend structure, layout design, responsive behavior, and interactive UI elements without using frameworks or JavaScript.
 
 The goal of this project was to strengthen frontend development skills through building a realistic social media interface from scratch.
@@ -59,23 +61,32 @@ The goal of this project was to strengthen frontend development skills through b
 
 ## Project Structure
 
-```bash
+```text
 Instagram-clone-/
-│
-├── Home.html
-├── Home.css
-│
-├── Images/
-│   ├── Ad.jpeg
-│   ├── Joeblack.jpeg
-│   ├── joehike.jpeg
-│   └── ...
-│
-├── Videos/
-│   ├── Relive.mp4
-│   ├── Tiret Hike.mp4
-│   └── ...
+├── Home.html        the feed: sidebar, stories, posts
+├── Search.html      the search / explore grid
+├── CSS/
+│   ├── Home.css
+│   └── Search.css
+├── Images/          photos used in posts and stories
+└── Videos/          video posts
 ```
+
+## Run it
+
+No build step. Open `Home.html` in a browser, or serve the folder:
+
+```bash
+python -m http.server 8000
+```
+
+Then go to http://localhost:8000/Home.html.
+
+## Known limitations
+
+- Only Home and Search exist. The Reels, Messages, Notifications, Profile and Settings links in the
+  sidebar don't go anywhere yet.
+- Everything is static: likes and bookmarks reset when the page reloads.
 
 ---
 
